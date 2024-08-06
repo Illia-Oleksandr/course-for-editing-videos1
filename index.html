@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Курс з Відеомонтажу</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#course">Курс</a></li>
+                    <li><a href="#testimonials">Відгуки</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#enroll">Записатися</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home">
+            <h1>Навчіться монтувати відео як професіонал</h1>
+            <p>Приєднуйтеся до нашого всеосяжного курсу відеомонтажу вже
+                сьогодні!</p>
+            <button onclick="enroll()">Записатися зараз</button>
+        </section>
+        <section id="about">
+            <h2>Про нас</h2>
+            <p>Ми - досвідчені відеомонтажери з пристрастю до навчання.</p>
+            <img src="images/about-us.jpg" alt="Про нас">
+        </section>
+        <section id="course">
+            <h2>Зміст курсу</h2>
+            <p>Наш курс охоплює все: від базового монтажу до просунутих
+                технік.</p>
+            <ul>
+                <li>Вступ до відеомонтажу</li>
+                <li>Просунуті техніки монтажу</li>
+                <li>Колірне коригування</li>
+                <li>Спецефекти</li>
+            </ul>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/course-intro.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відео тег.
+                </video>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Відгуки</h2>
+            <p>"Цей курс змінив мої навички монтажу!" - Студент А</p>
+            <p>"Дуже рекомендую всім, хто хоче навчитися монтажу." - Студент
+                Б</p>
+            <img src="images/testimonials.jpg" alt="Відгуки">
+        </section>
+        <section id="contact">
+            <h2>Контакти</h2>
+            <form>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+        <section id="enroll">
+            <h2>Записатися на курс</h2>
+            <form>
+                <label for="enroll-name">Ім'я:</label>
+                <input type="text" id="enroll-name" name="name">
+                <label for="enroll-email">Email:</label>
+                <input type="email" id="enroll-email" name="email">
+                <button type="submit">Записатися</button>
+            </form>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
